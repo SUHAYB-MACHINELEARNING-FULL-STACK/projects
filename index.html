@@ -9,14 +9,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Exploring bootstrap 5</title>
   </head>
   <body>
     <div class="center">
+      <h1>Your nice ToDo List</h1>
       <input type="text" id="in" placeholder="Todo Item" /><button onclick="myFunction()">Add</button>
       <button onclick="myFunctionn()">Delete</button>
-      <div>
+      <div align="center">
         
       </div>
     </div>
@@ -33,7 +34,7 @@
         arr.push(i.value);
         let string = "";
         for(let i=0; i < arr.length; i++) {
-          string += `<article style="display:flex; justify-content:space-around;"><input type="checkbox" style="display:inline;"/><b>${arr[i]}</b><i>didn't completed</i></article>`;
+          string += `<article style="display:flex; justify-content:space-around; border-radius:${i==0 && i==arr.length-1 ? "10px" : i==arr.length-1?"0px 0px 10px 10px":i==0?"10px 10px 0px 0px;":"0px"}"><input type="checkbox" style="display:inline;"/><b>${arr[i]}</b><i>didn't completed</i></article>`;
         }
         e.innerHTML = string;
         console.log(1, string, i.value)
