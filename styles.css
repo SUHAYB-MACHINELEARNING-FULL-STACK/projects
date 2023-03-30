@@ -1,11 +1,32 @@
-.center {
-  text-align: center;
+body {
+  background-color:black;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+article {
+  background-color:rgba(255, 255, 255, 0.08);
+  color:lightgreen;
+  padding:10px;
+  width:100%;
 }
 
-.margin10 {
-  margin: 10px;
+#in {
+  padding:5px;
+  color:aqua;
+  background-color:black;
+  border:1px solid #e6b31e;
+  border-radius:10px 0px 0px 10px;
+  outline:none;
 }
 
-.margin5 {
-  margin: 5px;
+button {
+  padding:5px;
+  outline:none;
+  border:1px solid rgba(255, 255, 255, 0.08);
+}
+div div {
+  margin:10px;
 }
